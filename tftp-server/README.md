@@ -15,3 +15,9 @@ StandardOutput=journal
 WantedBy=multi-user.target 
 
 ```
+
+start & enable script
+```
+sudo systemctl start rename.service
+sudo systemctl enable rename.service
+```
