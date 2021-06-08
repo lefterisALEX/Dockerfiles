@@ -1,5 +1,5 @@
 FROM amazon/aws-cli:2.2.4 
-RUN yum install -y openssl tar xz-utils gzip git wget
+RUN yum install -y openssl tar xz-utils gzip git wget zip unzip
 RUN curl -LO "https://dl.k8s.io/release/v1.19.10/bin/linux/amd64/kubectl" 
 RUN mv kubectl /usr/local/bin/kubectl
 RUN chmod +x /usr/local/bin/kubectl
